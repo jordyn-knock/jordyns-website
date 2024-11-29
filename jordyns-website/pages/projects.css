@@ -1,0 +1,89 @@
+/* Centering the Title */
+.projects-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #D83F87; /* Pink */
+}
+
+/* Projects Grid Styling */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns per row */
+  gap: 20px; /* Space between cards */
+  margin: 0 auto;
+  max-width: 1200px; /* Limit the width for larger screens */
+}
+
+/* Project Card Styling */
+.project-card {
+  background-color: #44318D; /* Purple box */
+  color: #FFFFFF; /* White text */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: flex;
+  flex-direction: column; /* Ensure vertical stacking of elements */
+  justify-content: space-between; /* Align buttons at the bottom */
+}
+
+.project-card h2 {
+  color: #D83F87; /* Pink title */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  flex: 1; /* Fills available space */
+  margin-bottom: 15px;
+  color: #E98074; /* Light Pink */
+  line-height: 1.6;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tags span {
+  background-color: #D83F87; /* Pink tags */
+  color: #FFFFFF; /* White text */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.project-card .btn {
+  background-color: #D83F87; /* Pink button */
+  color: #FFFFFF; /* White text */
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center; /* Center text in the button */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-card .btn:hover {
+  background-color: #E98074; /* Lighter Pink */
+  transform: scale(1.05); /* Slight grow effect */
+}
+
+
+
+/* Navbar Links Styling */
+.nav-links li a {
+  display: inline-block; /* Makes the link act as a block for padding and border */
+  background-color: #44318D; /* Dark Purple background */
+  color: #D83F87; /* Pink text */
+  padding: 10px 15px; /* Adds spacing around the links */
+  border-radius: 5px; /* Optional rounded corners */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #E98074; /* Light Pink background on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

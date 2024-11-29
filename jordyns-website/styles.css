@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif; /* Set global font to Arial */
+    margin: 0;
+    padding: 0;
+    background-color: #2A1B3D; /* Deep Purple background for consistency */
+    color: #FFFFFF; /* Default text color */
+  }
+
+/* Navbar Styles */
+.navbar {
+    background-color: #2A1B3D; /* Deep Purple */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #D83F87; /* Pink */
+    text-decoration: none;
+  }
+  
+  .navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar .nav-links li {
+    margin: 0;
+  }
+  
+  .navbar .nav-links li a {
+    color: #D83F87; /* Pink */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links li a:hover {
+    color: #E98074; /* Light Pink */
+  }
+  
+  

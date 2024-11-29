@@ -1,0 +1,94 @@
+/* about.css */
+
+/* General Page Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2A1B3D; /* Deep Purple */
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.about-me p {
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth fade and slide */
+  transform: translateY(20px); /* Start slightly below its normal position */
+}
+
+/* About Section */
+.about-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #44318D; /* Purple */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-section h1 {
+  font-size: 2.5rem;
+  color: #D83F87; /* Pink */
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  line-height: 1.8;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #E98074; /* Light Pink */
+}
+
+.contact-me h2 {
+  font-size: 1.5rem;
+  color: #D83F87; /* Pink */
+  margin-bottom: 20px;
+}
+
+.contact-me .social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  background-color: #D83F87; /* Pink */
+  color: #2A1B3D; /* Deep Purple */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.social-btn:hover {
+  background-color: #44318D; /* Purple */
+  color: #D83F87; /* Pink */
+  border: 2px solid #D83F87;
+}
+
+  /* Footer Styling */
+  .footer {
+    font-size: 0.9rem; /* Make the text slightly smaller */
+    text-align: center;
+    padding: 10px 0; /* Reduce padding */
+    background-color: #2A1B3D; /* Match the page background */
+    color: #FFFFFF; /* Ensure text is readable */
+    width: 100%; /* Full width across the bottom */
+    position: fixed; /* Fix it at the bottom of the page */
+    bottom: 0; /* Align it at the bottom */
+  }
+  
+    /* Navbar Links Styling */
+.nav-links li a {
+  display: inline-block; /* Makes the link act as a block for padding and border */
+  background-color: #44318D; /* Dark Purple background */
+  color: #D83F87; /* Pink text */
+  padding: 10px 15px; /* Adds spacing around the links */
+  border-radius: 5px; /* Optional rounded corners */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #E98074; /* Light Pink background on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
