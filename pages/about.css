@@ -73,7 +73,7 @@ body {
     background-color: #2A1B3D; /* Match the page background */
     color: #FFFFFF; /* Ensure text is readable */
     width: 100%; /* Full width across the bottom */
-    position: fixed; /* Fix it at the bottom of the page */
+    position: static; /* Fix it at the bottom of the page */
     bottom: 0; /* Align it at the bottom */
   }
   

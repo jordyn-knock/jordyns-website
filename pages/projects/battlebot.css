@@ -1,0 +1,83 @@
+/* General Container Styles */
+.project-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #44318D; /* Purple background */
+    color: #FFFFFF; /* White text */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Project Header */
+  .project-header h1 {
+    font-size: 2.5rem;
+    color: #D83F87; /* Pink */
+    margin-bottom: 10px;
+  }
+  
+  .project-header p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #E98074; /* Light Pink */
+  }
+  
+  /* Project Details Section */
+  .project-details {
+    margin-bottom: 30px;
+  }
+  
+  .project-details h2 {
+    font-size: 2rem;
+    color: #D83F87; /* Pink */
+    margin-bottom: 10px;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #FFFFFF;
+  }
+  
+  /* Project Images / Slideshow */
+  .project-images h2 {
+    font-size: 2rem;
+    color: #D83F87;
+    margin-bottom: 10px;
+  }
+  
+  .slideshow {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  
+  .slideshow img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Skills Learned Section */
+  .skills-learned h2 {
+    font-size: 2rem;
+    color: #D83F87;
+    margin-bottom: 10px;
+  }
+  
+  .skills-learned ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-learned li {
+    background-color: #D83F87; /* Pink */
+    color: #2A1B3D; /* Deep Purple */
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  

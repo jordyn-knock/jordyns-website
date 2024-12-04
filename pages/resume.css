@@ -59,7 +59,6 @@
     padding-left: 0px; /* Adjust this value to move the links closer to the left */
     list-style: none; /* Removes default bullet points */
 }
-
 .nav-links li a {
     display: inline-block; /* Makes the link act as a block for padding and border */
     background-color: #44318D; /* Dark Purple background */

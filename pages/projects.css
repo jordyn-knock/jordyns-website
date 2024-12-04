@@ -70,6 +70,19 @@
   transform: scale(1.05); /* Slight grow effect */
 }
 
+/* Footer Styling */
+.footer {
+  font-size: 0.9rem; /* Make the text slightly smaller */
+  text-align: center;
+  padding: 10px 0; /* Reduce padding */
+  background-color: #2A1B3D; /* Match the page background */
+  color: #FFFFFF; /* Ensure text is readable */
+  width: 100%; /* Full width across the bottom */
+  position: static; /* Fix it at the bottom of the page */
+  bottom: 0; /* Align it at the bottom */
+}
+
+  /* Navbar Links Styling */
 
 
 /* Navbar Links Styling */
