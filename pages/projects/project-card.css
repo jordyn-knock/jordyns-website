@@ -24,17 +24,22 @@ main {
   margin-bottom: 30px;
 }
 
+
 .project-header {
+  display: flex; /* Align images horizontally */
+  justify-content: center; /* Center images */
+  align-items: center; /* Vertically align images */
+  gap: 20px; /* Add space between images */
+  flex-wrap: wrap; /* Allow wrapping if images exceed container width */
+  text-align: center; /* Keep text centered for other elements */
   margin-top: 0; /* Ensure no extra space above the entire header */
   padding-top: 0; /* Remove any padding above */
 }
 
 .project-header img {
-  max-width: 30%; /* Make the image smaller (adjust percentage as needed) */
-  margin: 20px auto; /* Center the image and add vertical spacing */
-  display: block; /* Ensures the image is centered */
-  border-radius: 10px; /* Optional: Adds rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for better visual appeal */
+  width: 400px; /* Set a fixed width */
+  height: 300px; /* Set a fixed height */
+  object-fit: cover; /* Ensure images are cropped proportionally to fit */
 }
 
 /* Details Section */
@@ -52,24 +57,29 @@ main {
 }
 
 /* Gallery Section */
-.project-images h2 {
+.project-slideshow h2 {
   font-size: 2rem;
   color: #D83F87;
   margin-bottom: 15px;
+  text-align: left; /* Aligns text to the left */
+  margin-left: 0; /* Optional: Adjusts the left margin */
 }
-
-.slideshow {
-  display: flex;
-  gap: 20px;
-  overflow-x: auto;
-  padding: 10px 0;
-}
-
 .slideshow img {
   max-width: 100%;
   border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
+.project-slideshow {
+  text-align: center; /* Center the slideshow */
+  margin: 20px auto; /* Add some spacing */
+}
+
+.project-slideshow iframe {
+  border: none; /* Remove border */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for visual effect */
+}
+
 
 /* Skills Learned Section */
 .skills-learned h2 {
@@ -154,4 +164,14 @@ main {
 .nav-links li a:hover {
   background-color: #E98074; /* Light Pink background on hover */
   transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* specific to files */
+
+/* for battlebot */
+
+img[src*="arrow.png"] {
+  width: 160px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block; /* Ensure proper layout */
 }

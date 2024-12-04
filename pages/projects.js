@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
         img.style.display = i === index ? "block" : "none";
       });
       index = (index + 1) % images.length;
-    }, 3000); // Change image every 3 seconds
+    }, 5000); // Change image every 3 seconds
   });
   
