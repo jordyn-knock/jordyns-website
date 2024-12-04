@@ -1,83 +1,143 @@
-/* General Container Styles */
+/* General Project Styles */
 .project-container {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #44318D; /* Purple background */
-    color: #FFFFFF; /* White text */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: Arial, sans-serif;
-  }
-  
-  /* Project Header */
-  .project-header h1 {
-    font-size: 2.5rem;
-    color: #D83F87; /* Pink */
-    margin-bottom: 10px;
-  }
-  
-  .project-header p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #E98074; /* Light Pink */
-  }
-  
-  /* Project Details Section */
-  .project-details {
-    margin-bottom: 30px;
-  }
-  
-  .project-details h2 {
-    font-size: 2rem;
-    color: #D83F87; /* Pink */
-    margin-bottom: 10px;
-  }
-  
-  .project-details p {
-    font-size: 1rem;
-    line-height: 1.8;
-    color: #FFFFFF;
-  }
-  
-  /* Project Images / Slideshow */
-  .project-images h2 {
-    font-size: 2rem;
-    color: #D83F87;
-    margin-bottom: 10px;
-  }
-  
-  .slideshow {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-  }
-  
-  .slideshow img {
-    max-width: 100%;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Skills Learned Section */
-  .skills-learned h2 {
-    font-size: 2rem;
-    color: #D83F87;
-    margin-bottom: 10px;
-  }
-  
-  .skills-learned ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skills-learned li {
-    background-color: #D83F87; /* Pink */
-    color: #2A1B3D; /* Deep Purple */
-    margin: 5px 0;
-    padding: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
+  max-width: 1500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #2A1B3D; /* Deep Purple */
+  color: #FFFFFF; /* White text */
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.project-header h1 {
+  font-size: 2.5rem;
+  color: #D83F87; /* Pink */
+  margin-bottom: 20px;
+}
+
+.project-header p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #E98074; /* Light pink */
+  margin-bottom: 30px;
+}
+
+/* Details Section */
+.project-details h2 {
+  font-size: 2rem;
+  color: #D83F87; /* Pink */
+  margin-bottom: 15px;
+}
+
+.project-details p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+/* Gallery Section */
+.project-images h2 {
+  font-size: 2rem;
+  color: #D83F87;
+  margin-bottom: 15px;
+}
+
+.slideshow {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.slideshow img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Skills Learned Section */
+.skills-learned h2 {
+  font-size: 2rem;
+  color: #D83F87; /* Pink */
+  margin-bottom: 15px;
+}
+
+.skills-learned ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills-learned li {
+  background-color: #D83F87; /* Pink */
+  color: #2A1B3D; /* Deep Purple */
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Navigation Buttons */
+.project-navigation {
+  display: flex;
+  justify-content: space-between; /* Align buttons to the sides */
+  margin-top: 30px;
+}
+
+.project-navigation .btn {
+  background-color: #D83F87; /* Pink */
+  color: #FFFFFF; /* White text */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-navigation .btn:hover {
+  background-color: #E98074; /* Light pink hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Footer Styling */
+.footer {
+  font-size: 0.9rem; /* Make the text slightly smaller */
+  text-align: center;
+  padding: 10px 0; /* Reduce padding */
+  background-color: #2A1B3D; /* Match the page background */
+  color: #FFFFFF; /* Ensure text is readable */
+  width: 100%; /* Full width across the bottom */
+  position: static; /* Fix it at the bottom of the page */
+  bottom: 0; /* Align it at the bottom */
+}
+
+  /* Navbar Links Styling */
+
+
+/* Navbar Links Styling */
+
+.nav-links {
+  display: flex; /* Ensures the list items are laid out in a row */
+  justify-content: flex-start; /* Aligns the links to the left */
+  gap: 10px; /* Optional spacing between links */
+  padding-left: 0px; /* Adjust this value to move the links closer to the left */
+  list-style: none; /* Removes default bullet points */
+}
+.nav-links li a {
+  display: inline-block; /* Makes the link act as a block for padding and border */
+  background-color: #44318D; /* Dark Purple background */
+  color: #D83F87; /* Pink text */
+  padding: 10px 15px; /* Adds spacing around the links */
+  border-radius: 5px; /* Optional rounded corners */
+  text-decoration: none; /* Removes underline */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #E98074; /* Light Pink background on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}

@@ -3,16 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project Name | Jordyn Knock</title>
-  <link rel="stylesheet" href="../styles.css"> <!-- General styles -->
-  <link rel="stylesheet" href="project-name.css"> <!-- Project-specific styles -->
+  <title>BattleBot | Jordyn Knock</title>
+  <!-- Global styles -->
+  <link rel="stylesheet" href="../../styles.css">
+  <!-- Project-specific styles -->
+  <link rel="stylesheet" href="project-card.css">
 </head>
 <body>
   <!-- Header Section -->
   <header>
     <nav class="navbar">
       <div class="container">
-        <a href="../index.html" class="logo">Jordyn Knock</a>
+        <a href="../../index.html" class="logo">Jordyn Knock</a>
         <ul class="nav-links">
           <li><a href="../about.html">About</a></li>
           <li><a href="../projects.html" class="active">Projects</a></li>
@@ -25,32 +27,47 @@
 
   <!-- Main Content -->
   <main class="project-container">
+    <!-- Project Title -->
     <section class="project-header">
-      <h1>Project Name</h1>
-      <p>A brief summary of the project goes here, explaining its purpose and context.</p>
+      <h1>BattleBot</h1>
+      <p>
+        Inspired by the show "Battlebots", myself and my 3 friends build a prototype battlebot named Nigel. Nigel was built using a 3-D printed chassis, an arduino uno, as well as an L298 driver board to control the wheels. After various itertion and many lessons learned, we ended up with a product we are proud of.
+      </p>
+      <img src="../../images/nigel.png" alt="Nigel">
     </section>
 
+    <!-- Project Details -->
     <section class="project-details">
       <h2>About the Project</h2>
-      <p>This section includes a detailed description of the project. Explain what the project is about, its goals, challenges faced, and outcomes.</p>
+      <p>
+        BattleBot was designed to explore the application of mechanical and programming skills. The project used Gantt charts, risk matrices, and Arduino programming for efficient design and prototyping.
+      </p>
     </section>
 
+    <!-- Gallery -->
     <section class="project-images">
       <h2>Gallery</h2>
       <div class="slideshow">
-        <img src="image1.jpg" alt="Image 1 description">
-        <img src="image2.jpg" alt="Image 2 description">
-        <img src="image3.jpg" alt="Image 3 description">
+        <img src="../../images/battlebot1.jpg" alt="BattleBot - Front View">
+        <img src="../../images/battlebot2.jpg" alt="BattleBot - Side View">
+        <img src="../../images/battlebot3.jpg" alt="BattleBot in Action">
       </div>
     </section>
 
+    <!-- Skills Learned -->
     <section class="skills-learned">
       <h2>Skills Learned</h2>
       <ul>
-        <li>Skill 1</li>
-        <li>Skill 2</li>
-        <li>Skill 3</li>
+        <li>Programming with Arduino</li>
+        <li>Mechanical Design</li>
+        <li>Electronics Integration</li>
       </ul>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <section class="project-navigation">
+        <a href="../projects.html" class="btn">Back to Projects</a>
+        <a href="oxalic-acid.html" class="btn">Next Project</a>
     </section>
   </main>
 
