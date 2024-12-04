@@ -6,6 +6,10 @@ body {
     color: #FFFFFF; /* Default text color */
   }
 
+  h1 {
+    margin-top: 0; /* Removes any default margin above all <h1> elements */
+  }
+  
 /* Navbar Styles */
 .navbar {
     background-color: #2A1B3D; /* Deep Purple */

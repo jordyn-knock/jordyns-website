@@ -1,12 +1,12 @@
-/* General Project Styles */
-.project-container {
-  max-width: 1500px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #2A1B3D; /* Deep Purple */
-  color: #FFFFFF; /* White text */
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
+/* Main Content Styles */
+main {
+  flex: 1; /* Allows the main content to grow and fill space */
+  padding: 20px; /* Adds spacing around content */
+}
+
+/* Project Header */
+.project-header {
+  text-align: center; /* Center text and images */
 }
 
 /* Header Section */
@@ -14,13 +14,27 @@
   font-size: 2.5rem;
   color: #D83F87; /* Pink */
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .project-header p {
   font-size: 1.2rem;
   line-height: 1.8;
-  color: #E98074; /* Light pink */
+  color: #FFFFFF; /* Light pink */
   margin-bottom: 30px;
+}
+
+.project-header {
+  margin-top: 0; /* Ensure no extra space above the entire header */
+  padding-top: 0; /* Remove any padding above */
+}
+
+.project-header img {
+  max-width: 30%; /* Make the image smaller (adjust percentage as needed) */
+  margin: 20px auto; /* Center the image and add vertical spacing */
+  display: block; /* Ensures the image is centered */
+  border-radius: 10px; /* Optional: Adds rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Adds a shadow for better visual appeal */
 }
 
 /* Details Section */
