@@ -47,7 +47,6 @@ body {
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
   
-  
   .courses-list li strong {
     display: block;
     font-size: 1.4rem;
