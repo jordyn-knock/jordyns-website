@@ -273,12 +273,11 @@ img[src*="halo2.png"] {
   }
 }
 
+/* Fullscreen button */
 .slideshow-container {
   position: relative; /* Makes this the reference for child absolute positioning */
 }
 
-
-/* Fullscreen button */
 .fullscreen-btn {
   position: absolute;
   top: 10px;

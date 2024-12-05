@@ -72,19 +72,74 @@ body {
   border: 2px solid #D83F87;
 }
 
-  /* Footer Styling */
-  .footer {
-    font-size: 0.9rem; /* Make the text slightly smaller */
-    text-align: center;
-    padding: 10px 0; /* Reduce padding */
-    background-color: #2A1B3D; /* Match the page background */
-    color: #FFFFFF; /* Ensure text is readable */
-    width: 100%; /* Full width across the bottom */
-    position: static; /* Fix it at the bottom of the page */
-    bottom: 0; /* Align it at the bottom */
+/* Circle Image Styling */
+.circle-image img {
+  width: 250px; /* Increase the size of the circle images */
+  height: 250px;
+  object-fit: cover; /* Ensure images maintain aspect ratio */
+  border-radius: 50%; /* This makes the image circular */
+  transition: transform 0.3s ease; /* Smooth scale transition on hover */
+}
+
+/* Positioning Circle Images */
+.circle-image.top-right {
+  position: absolute;
+  top: 5%; /* Slightly further from the top */
+  right: 5%; /* Slightly further from the right */
+  z-index: 10;
+}
+
+.circle-image.middle-left {
+  position: absolute;
+  left: 4%; /* Move the middle-left image further from the left */
+  top: 45%; /* Keep the vertical position */
+  z-index: 10;
+}
+
+.circle-image.bottom-right {
+  position: absolute;
+  bottom: -15%; /* Slightly further from the bottom */
+  right: 5%; /* Slightly further from the right */
+  z-index: 10;
+}
+
+/* Footer Styling */
+.footer {
+  font-size: 0.9rem; /* Make the text slightly smaller */
+  text-align: center;
+  padding: 10px 0; /* Reduce padding */
+  background-color: #2A1B3D; /* Match the page background */
+  color: #FFFFFF; /* Ensure text is readable */
+  width: 100%; /* Full width across the bottom */
+  position: static; /* Fix it at the bottom of the page */
+  bottom: 0; /* Align it at the bottom */
+}
+  
+/* Mobile View - Only show Image 1 */
+@media screen and (max-width: 768px) {
+
+  .circle-image.top-right {
+    display: block; /* Show Image 1 */
+    margin-right: -10px; /* Adds some space between the image and the title */
+    margin-top: 105px
   }
   
-    /* Navbar Links Styling */
+  .circle-image.middle-left {
+    display: none; /* Hide Image 2 on mobile */
+  }
+  
+  .circle-image.bottom-right {
+    display: none; /* Hide Image 2 on mobile */
+  }
+
+  .circle-image img {
+    width: 100px; /* Consistent size */
+    height: 100px; /* Ensures they are square */
+    border-radius: 50%; /* Make them circular */
+  }
+
+}
+ /* Navbar Links Styling */
 
   
 .nav-links {
