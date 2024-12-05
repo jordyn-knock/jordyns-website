@@ -265,11 +265,24 @@ img[src*="halo2.png"] {
   height: 90vh; /* Fit iframe to fullscreen height */
 }
 
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  .slideshow-iframe {
+    width: 100%; /* Use full width of smaller screens */
+    height: 400px; /* Reduce height for mobile */
+  }
+}
+
+.slideshow-container {
+  position: relative; /* Makes this the reference for child absolute positioning */
+}
+
+
 /* Fullscreen button */
 .fullscreen-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
   background: #D83F87; /* Pink button */
   color: #FFFFFF;
   border: none;
@@ -282,4 +295,21 @@ img[src*="halo2.png"] {
 
 .fullscreen-btn:hover {
   background: #E98074; /* Light pink on hover */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .fullscreen-btn {
+    padding: 5px 10px; /* Smaller padding for mobile */
+    font-size: 0.8rem; /* Reduce font size */
+    top: 5px; /* Adjust placement slightly */
+    right: 5px; /* Adjust placement slightly */
+  }
+}
+/* Mobile Adjustment for Fullscreen Button */
+@media (max-width: 768px) {
+  .fullscreen-btn:not(.exit-fullscreen) {
+    top: -30px; /* Move the button higher */
+    right: 10px; /* Keep aligned to the right */
+  }
 }

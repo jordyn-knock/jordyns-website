@@ -145,6 +145,14 @@ main {
     background-color: #E98074; /* Light pink hover */
     transform: scale(1.05); /* Slight zoom effect */
   }
+
+  /* Adjust button size on smaller screens */
+@media (max-width: 768px) {
+  .project-navigation .btn {
+    padding: 5px 10px; /* Reduce padding */
+    font-size: 0.8rem; /* Decrease font size */
+  }
+}
   
   /* Footer Styling */
   .footer {
