@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accuracy Project| Jordyn Knock</title>
+  <!-- Global styles -->
+  <link rel="stylesheet" href="../../styles.css">
+  <!-- Project-specific styles -->
+  <link rel="stylesheet" href="roberto.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="../../index.html" class="logo">Jordyn Knock</a>
+        <ul class="nav-links">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../thoughts.html">Thoughts</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Project Title -->
+    <section class="project-header">
+        <h1>Accuracy Robot (Apr. 2024 - Aug.2024) </h1>
+    <section class="project-intro">
+        <div class="intro-container">
+          <img src="../../images/roberto.png" alt="Roberto" class="intro-image">
+          <p class="intro-text">
+            As part of my summer 2024 internship at MOLLI Surgical, which was adopted by Stryker, I worked on developing an accuracy testing robot named Roberto. 
+            The purpose of Roberto was to take magnetic field measurements at commanded locations, which made a shape, and output them to a CSV file. 
+            This was then used to enhance the precision of the company's product. I created the software as well as refined models of the wand connector and magnet connector using Fusion 360. 
+            The robot could then be used to test other wand errors by simulating different scenarios and outputting data.
+          </p>
+        </div>
+      </section>
+      </section>
+  </main>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <section class="data-collection-process">
+            <h2>About the Project</h2>
+            <h3>Data Collection Process</h3>
+            <h4>1. Initialization</h4>
+            <p>
+              The robot begins its process after verifying that the wand and printer are properly connected.
+              Users input parameters such as magnet type, orientation, and scan shape (e.g., square or hemisphere).
+              For a square, the user specifies scan ranges in <code>x</code>, <code>y</code>, and <code>z</code> directions, along with the number of points.
+              For a hemisphere, parameters include radius ranges, shell counts, and point distributions based on the Fibonacci sphere.
+            </p>
+            
+            <h4>2. Scan Execution</h4>
+            <p>
+              The robot calculates and generates coordinates using Python’s <code>numpy</code> library for square scans or the Fibonacci sphere method for hemispheres.
+              Once the scan points are set, the robot executes G-code commands to move through each coordinate.
+              At each point, the robot collects 100 magnetic field measurements, ensuring robust data accuracy.
+            </p>
+            
+            <h4>3. Data Saving</h4>
+            <p>
+              The collected measurements are saved into a CSV file. This file includes detailed data for each scan point, such as <code>x</code>, <code>y</code>, and <code>z</code> coordinates, magnetic field values, and associated metadata.
+            </p>
+            
+            <h4>4. Automatic Upload</h4>
+            <p>
+              Upon completing the scan, the CSV file is automatically uploaded to the designated Google Drive folder.
+              Alongside the CSV, a JSON file is also uploaded. This file contains metadata about the scan, such as magnet type, orientation, wand details, and additional scan-specific information.
+            </p>
+            
+            <h4>5. Data Accessibility</h4>
+            <p>
+              All uploaded files are organized by year and scan type, allowing for easy retrieval and analysis.
+              The data can also be analyzed using a Python script, which computes error values for <code>x</code>, <code>y</code>, <code>z</code>, and distance from the scan data.
+            </p>
+
+            <h3>Project Flow</h3>
+            <p>I kept track of the project code and its flow using a flowchart, which you can view below.</p>
+        
+        <div class="image-container">
+            <img src="../../images/robot whiteboard.png" alt="Roberto!">
+        </div>
+    
+            <h3>Project Contributions</h3>
+            <h4>User Manual</h4>
+                <p>
+                A comprehensive manual was created to document Roberto's operation, covering setup, troubleshooting, and best practices.
+                </p>
+            </div>
+            
+                <h4>Version Tracking and Documentation</h4>
+                <p>
+                Software updates were tracked using Git repositories on BitBucket. Each update was meticulously documented in a version history file, listing changes, commit IDs, and explanations for each feature.
+                </p>
+            </div>
+
+                <h4>Mechanical Design</h4>
+                <p>
+                New mechanical components were designed in Fusion 360, including updated marker holders and wand attachments. These components were optimized for improved stability, precision, and usability.
+                </p>
+            </div>
+        </section>
+
+            
+    </section>
+
+    <section class="skills-learned">
+        <!-- Technical Skills Section -->
+        <div class="technical-skills">
+          <h2>Technical Skills</h2>
+          <p>
+            Through this project, I developed and enhanced my technical expertise in several areas, including software development, mechanical design, and data analysis. Each skill played a key role in creating a functional and reliable accuracy testing robot.
+          </p>
+          <ul>
+            <li>Python Programming.</li>
+            <li>Data Processing</li>
+            <li>Mechanical Design</li>
+            <li>3D Printing</li>
+            <li>Version Control</li>
+          </ul>
+        </div>
+      
+        <!-- Soft Skills Section -->
+        <div class="soft-skills">
+          <h2>Soft Skills</h2>
+          <p>
+            Working on this project provided opportunities to collaborate with teams, improve organizational skills, and adapt to challenges. These soft skills ensured the project's success and highlighted the importance of clear communication and problem-solving.
+          </p>
+          <ul>
+            <li>Team Collaboration</li>
+            <li>Problem-Solving</li>
+            <li>Adaptability</li>
+            <li>Effective Communication</li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- Navigation Buttons -->
+    <section class="project-navigation">
+        <a href="../projects.html" class="btn">Back to Projects</a>
+        <a href="oxalic-acid.html" class="btn">Back to Oxalic Acid</a>
+        <a href=".html" class="btn">Next Project</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Jordyn Knock. All rights reserved.</p>
+  </footer>
+</body>
+</html>

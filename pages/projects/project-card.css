@@ -24,7 +24,6 @@ main {
   margin-bottom: 30px;
 }
 
-
 .project-header {
   display: flex; /* Align images horizontally */
   justify-content: center; /* Center images */
@@ -42,27 +41,36 @@ main {
   object-fit: cover; /* Ensure images are cropped proportionally to fit */
 }
 
+
 /* Details Section */
+/* General Project Details Section */
 .project-details h2 {
   font-size: 2rem;
   color: #D83F87; /* Pink */
   margin-bottom: 15px;
+  padding-left: 30px; /* Aligns with other elements */
+  padding-right: 30px;
+  line-height: 1.2; /* Reduced line spacing for headings */
 }
 
 .project-details p {
-  font-size: 1rem;
-  line-height: 1.8;
-  color: #FFFFFF;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  color: #FFFFFF; /* Light text for readability */
+  margin-bottom: 10px; /* Spacing between paragraphs */
+  padding-left: 30px; 
+  padding-right: 30px;
 }
+
 
 /* Gallery Section */
 .project-slideshow h2 {
   font-size: 2rem;
   color: #D83F87;
   margin-bottom: 15px;
-  text-align: left; /* Aligns text to the left */
+  text-align: left; /*Aligns text to the left */
   margin-left: 0; /* Optional: Adjusts the left margin */
+  padding-left: 30px;
 }
 .slideshow img {
   max-width: 100%;
@@ -71,7 +79,7 @@ main {
 }
 .project-slideshow {
   text-align: center; /* Center the slideshow */
-  margin: 20px auto; /* Add some spacing */
+  margin: 30px auto; /* Add some spacing */
 }
 
 .project-slideshow iframe {
@@ -80,23 +88,44 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow for visual effect */
 }
 
+/* Skills Section Descriptions */
+.skills-learned .technical-skills p,
+.skills-learned .soft-skills p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #FFFFFF; /* White text */
+  margin-bottom: 15px; /* Adds spacing below the description */
+  padding-left: 30px; /* Aligns description with heading and list */
+  padding-right: 30px;
+}
 
-/* Skills Learned Section */
-.skills-learned h2 {
+/* Technical and Soft Skills */
+.skills-learned .technical-skills,
+.skills-learned .soft-skills {
+  margin-bottom: 30px; /* Adds spacing between sections */
+}
+
+.skills-learned .technical-skills h2,
+.skills-learned .soft-skills h2 {
   font-size: 2rem;
   color: #D83F87; /* Pink */
   margin-bottom: 15px;
+  padding-left: 30px; /* Aligns heading with other content */
 }
 
-.skills-learned ul {
+.skills-learned .technical-skills ul,
+.skills-learned .soft-skills ul {
   list-style-type: none;
   padding: 0;
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 30px; /* Aligns with heading */
+  padding-right: 30px;
 }
 
-.skills-learned li {
+.skills-learned .technical-skills li,
+.skills-learned .soft-skills li {
   background-color: #D83F87; /* Pink */
   color: #2A1B3D; /* Deep Purple */
   padding: 10px 15px;
@@ -104,7 +133,6 @@ main {
   font-weight: bold;
   font-size: 0.9rem;
 }
-
 /* Navigation Buttons */
 .project-navigation {
   display: flex;
@@ -139,9 +167,6 @@ main {
   bottom: 0; /* Align it at the bottom */
 }
 
-  /* Navbar Links Styling */
-
-
 /* Navbar Links Styling */
 
 .nav-links {
@@ -174,4 +199,25 @@ img[src*="arrow.png"] {
   width: 160px; /* Adjust size as needed */
   height: auto; /* Maintain aspect ratio */
   display: inline-block; /* Ensure proper layout */
+}
+
+img[src*="pfd.png"] {
+  width: 900px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block; /* Ensure proper layout */
+
+}
+
+img[src*="halo1.png"] {
+  width: 400px; /* Adjust size as needed */
+  height: 500px; /* Maintain aspect ratio */
+  display: inline-block; /* Ensure proper layout */
+
+}
+
+img[src*="halo2.png"] {
+  width: 400px; /* Adjust size as needed */
+  height: 500px; /* Maintain aspect ratio */
+  display: inline-block; /* Ensure proper layout */
+
 }

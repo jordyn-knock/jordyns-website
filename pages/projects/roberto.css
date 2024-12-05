@@ -1,0 +1,214 @@
+/* Main Content Styles */
+main {
+    flex: 1; /* Allows the main content to grow and fill space */
+    padding: 20px; /* Adds spacing around content */
+  }
+  
+  /* Project Header */
+  .project-header {
+    text-align: center; /* Center text and images */
+  }
+
+    /* Header Section */
+.project-header h1 {
+        font-size: 2.5rem;
+        color: #D83F87; /* Pink */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+  
+  /* Header Section */
+  /* Project Introduction Section */
+  .project-intro {
+    margin: 10px auto; /* Add vertical spacing for the section */
+    padding: 20px; /* Padding around the section */
+  }
+  
+  .intro-container {
+    display: flex; /* Enable flexbox for horizontal alignment */
+    align-items: center; /* Vertically align the image and text */
+    gap: 20px; /* Add spacing between the image and the text */
+  }
+  
+  .intro-image {
+    width: 40%; /* Image takes up 40% of the container width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .intro-text {
+    width: auto; /* Text takes up 55% of the container width */
+    font-size: 1.3rem; /* Adjust the font size */
+    line-height: 1.6; /* Space between text lines for readability */
+    color: #FFFFFF; /* Light text for contrast */
+    text-align: justify; /* Justify the text for a clean look */
+  }
+  
+  /* Details Section */
+  /* General Project Details Section */
+  .project-details h2 {
+    font-size: 2rem;
+    color: #D83F87; /* Pink */
+    margin-bottom: 10px;
+    padding-left: 30px; /* Aligns with other elements */
+    line-height: 1.2; /* Reduced line spacing for headings */
+  }
+  
+  .project-details h3 {
+    font-size: 1.5rem;
+    color: #D83F87; /* Pink */
+    margin-bottom: 10px;
+    padding-left: 30px; /* Aligns with other elements */
+    line-height: 1.2; /* Reduced line spacing for headings */
+  }
+  
+  .project-details h4 {
+    font-size: 1.3rem;
+    color: #E98074; /* Light Pink */
+    margin-bottom: 10px;
+    margin-top: 5px; /* Reduced top spacing */
+    padding-left: 40px; /* Slightly more indentation for hierarchy */
+    line-height: 1.2; /* Reduced line spacing for headings */
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    line-height: 1.3;
+    color: #FFFFFF; /* Light text for readability */
+    margin-bottom: 10px; /* Spacing between paragraphs */
+    padding-left: 40px; /* Aligns with h4 for visual hierarchy */
+  }
+  
+  
+  /* Skills Section Descriptions */
+  .skills-learned .technical-skills p,
+  .skills-learned .soft-skills p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #FFFFFF; /* White text */
+    margin-bottom: 15px; /* Adds spacing below the description */
+    padding-left: 30px; /* Aligns description with heading and list */
+    padding-right: 30px;
+  }
+  
+  /* Technical and Soft Skills */
+  .skills-learned .technical-skills,
+  .skills-learned .soft-skills {
+    margin-bottom: 30px; /* Adds spacing between sections */
+  }
+  
+  .skills-learned .technical-skills h2,
+  .skills-learned .soft-skills h2 {
+    font-size: 2rem;
+    color: #D83F87; /* Pink */
+    margin-bottom: 15px;
+    padding-left: 30px; /* Aligns heading with other content */
+  }
+  
+  .skills-learned .technical-skills ul,
+  .skills-learned .soft-skills ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 30px; /* Aligns with heading */
+    padding-right: 30px;
+  }
+  
+  .skills-learned .technical-skills li,
+  .skills-learned .soft-skills li {
+    background-color: #D83F87; /* Pink */
+    color: #2A1B3D; /* Deep Purple */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  /* Navigation Buttons */
+  .project-navigation {
+    display: flex;
+    justify-content: space-between; /* Align buttons to the sides */
+    margin-top: 30px;
+  }
+  
+  .project-navigation .btn {
+    background-color: #D83F87; /* Pink */
+    color: #FFFFFF; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .project-navigation .btn:hover {
+    background-color: #E98074; /* Light pink hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  /* Footer Styling */
+  .footer {
+    font-size: 0.9rem; /* Make the text slightly smaller */
+    text-align: center;
+    padding: 10px 0; /* Reduce padding */
+    background-color: #2A1B3D; /* Match the page background */
+    color: #FFFFFF; /* Ensure text is readable */
+    width: 100%; /* Full width across the bottom */
+    position: static; /* Fix it at the bottom of the page */
+    bottom: 0; /* Align it at the bottom */
+  }
+  
+  /* Navbar Links Styling */
+  
+  .nav-links {
+    display: flex; /* Ensures the list items are laid out in a row */
+    justify-content: flex-start; /* Aligns the links to the left */
+    gap: 10px; /* Optional spacing between links */
+    padding-left: 0px; /* Adjust this value to move the links closer to the left */
+    list-style: none; /* Removes default bullet points */
+  }
+  .nav-links li a {
+    display: inline-block; /* Makes the link act as a block for padding and border */
+    background-color: #44318D; /* Dark Purple background */
+    color: #D83F87; /* Pink text */
+    padding: 10px 15px; /* Adds spacing around the links */
+    border-radius: 5px; /* Optional rounded corners */
+    text-decoration: none; /* Removes underline */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #E98074; /* Light Pink background on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+  }
+  
+  
+  img[src*="roberto.png"] {
+    width: 350px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Ensure proper layout */
+  }
+  
+  img[src*="robot whiteboard.png"] {
+    width: 1000px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Makes the image behave like a block for easier alignment */
+    margin: 20px auto;
+  }
+  
+  /* Specific Styling for Data Collection Process Section */
+  .data-collection-process {
+    background-color: #2A1B3D; /* Dark background for section */
+    padding: 30px;
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 30px; /* Spacing from other sections */
+  }
+  
+  .data-collection-process code {
+    font-family: "Courier New", Courier, monospace;
+    background-color: #44318D; /* Dark Purple background for code snippets */
+    color: #FFD700; /* Gold text for contrast */
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
