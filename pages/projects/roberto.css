@@ -212,6 +212,16 @@ main {
     border-radius: 3px;
   }
   
+  .scrollable-container {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of content */
+    width: 100%; /* Ensures the container uses full width of the parent */
+}
+
+.scrollable-container img {
+    width: 1000px; /* Image retains original width */
+    height: auto; /* Maintains aspect ratio */
+}
 
 /* Responsive Design for Smaller Screens */
 @media (max-width: 768px) {
@@ -233,5 +243,18 @@ main {
   
     .project-header h1 {
       font-size: 2rem; /* Slightly smaller header for smaller screens */
+    }
+  
+    /* Make the robot whiteboard image scrollable */
+    img[src*="robot whiteboard.png"] {
+      width: 1000px; /* Keep the large width */
+      height: auto; /* Maintain aspect ratio */
+      display: block; /* Keep it as a block-level element */
+      margin: 20px auto;
+    }
+  
+    .scrollable-container {
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent wrapping */
     }
   }
