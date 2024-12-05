@@ -212,3 +212,26 @@ main {
     border-radius: 3px;
   }
   
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .intro-container {
+      flex-direction: column; /* Stack the image and text vertically */
+      align-items: center; /* Center both image and text */
+    }
+  
+    .intro-image {
+      width: 80%; /* Image takes up 80% of the container width on small screens */
+      margin-bottom: 20px; /* Add space between image and text */
+    }
+  
+    .intro-text {
+      width: 100%; /* Text takes full width on small screens */
+      font-size: 1rem; /* Slightly smaller font for better fit */
+      text-align: center; /* Center-align text for a cohesive look */
+    }
+  
+    .project-header h1 {
+      font-size: 2rem; /* Slightly smaller header for smaller screens */
+    }
+  }

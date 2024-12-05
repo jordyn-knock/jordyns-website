@@ -105,3 +105,13 @@
   background-color: #E98074; /* Light Pink background on hover */
   transform: scale(1.05); /* Slight zoom effect on hover */
 }
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+  .projects-title {
+    font-size: 2rem; /* Slightly smaller title for smaller screens */
+  }
+}
