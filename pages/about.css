@@ -1,153 +1,69 @@
-/* about.css */
-
-.about-title {
-  text-align: center;
-  margin-bottom: 40px;
-  font-size: 2.5rem;
-  color: #D83F87; /* Pink */
-}
-
 /* General Page Styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #2A1B3D; /* Deep Purple */
-  color: #FFFFFF;
+  background-color: #2A1B3D; /* Dark Background */
+  color: #FFFFFF; /* White font */
   margin: 0;
   padding: 0;
 }
 
-.about-me p {
-  opacity: 0; /* Initially hidden */
-  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth fade and slide */
-  transform: translateY(20px); /* Start slightly below its normal position */
-}
-
-/* About Section */
-.about-section {
-  max-width: 800px;
-  margin: 50px auto;
+.about-me {
+  text-align: left;
   padding: 20px;
-  background-color: #44318D; /* Purple */
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.about-section h1 {
-  font-size: 2.5rem;
-  color: #D83F87; /* Pink */
-  margin-bottom: 20px;
-}
-
-.about-section p {
-  line-height: 1.8;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  color: #E98074; /* Light Pink */
-}
-
-.contact-me h2 {
-  font-size: 1.5rem;
-  color: #D83F87; /* Pink */
-  margin-bottom: 20px;
-}
-
-.contact-me .social-links {
+.intro {
   display: flex;
-  gap: 10px;
+  align-items: center;
+  gap: 40px; /* Increased gap for better spacing */
 }
 
-.social-btn {
-  background-color: #D83F87; /* Pink */
-  color: #2A1B3D; /* Deep Purple */
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s, color 0.3s;
+.profile-image img {
+  width: 500px; /* Enlarged image */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures it scales properly */
+  margin-left: 80px;
 }
 
-.social-btn:hover {
-  background-color: #44318D; /* Purple */
-  color: #D83F87; /* Pink */
-  border: 2px solid #D83F87;
+.short-description {
+  max-width: 600px; /* Restrict width to balance layout */
+  /* padding-left: 20px; */
 }
 
-/* Circle Image Styling */
-.circle-image img {
-  width: 250px; /* Increase the size of the circle images */
-  height: 250px;
-  object-fit: cover; /* Ensure images maintain aspect ratio */
-  border-radius: 50%; /* This makes the image circular */
-  transition: transform 0.3s ease; /* Smooth scale transition on hover */
+.short-description h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #D83F87; /* Pink "About Me" */
 }
 
-/* Positioning Circle Images */
-.circle-image.top-right {
-  position: absolute;
-  top: 5%; /* Slightly further from the top */
-  right: 5%; /* Slightly further from the right */
-  z-index: 10;
+.short-description p {
+  font-size: 1.2rem;
+  line-height: 1.8;
 }
 
-.circle-image.middle-left {
-  position: absolute;
-  left: 4%; /* Move the middle-left image further from the left */
-  top: 45%; /* Keep the vertical position */
-  z-index: 10;
+.down-arrow {
+  font-size: 1.5rem;
+  color: #D83F87; /* Pink down arrow */
 }
 
-.circle-image.bottom-right {
-  position: absolute;
-  bottom: -15%; /* Slightly further from the bottom */
-  right: 5%; /* Slightly further from the right */
-  z-index: 10;
+.long-description {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  margin: 20px auto; /* Add vertical space around it */
+  padding: 0 40px; /* Increase left and right padding */
+  color: #F4C2C2; /* Orangy color for the long description text */
+}
+.long-description p {
+  margin-bottom: 20px; /* Space between paragraphs */
 }
 
-/* Footer Styling */
-.footer {
-  font-size: 0.9rem; /* Make the text slightly smaller */
-  text-align: center;
-  padding: 10px 0; /* Reduce padding */
-  background-color: #2A1B3D; /* Match the page background */
-  color: #FFFFFF; /* Ensure text is readable */
-  width: 100%; /* Full width across the bottom */
-  position: static; /* Fix it at the bottom of the page */
-  bottom: 0; /* Align it at the bottom */
-}
-  
-/* Mobile View - Only show Image 1 */
-@media screen and (max-width: 768px) {
-
-  .circle-image.top-right {
-    display: block; /* Show Image 1 */
-    margin-right: -10px; /* Adds some space between the image and the title */
-    margin-top: 105px
-  }
-  
-  .circle-image.middle-left {
-    display: none; /* Hide Image 2 on mobile */
-  }
-  
-  .circle-image.bottom-right {
-    display: none; /* Hide Image 2 on mobile */
-  }
-
-  .circle-image img {
-    width: 100px; /* Consistent size */
-    height: 100px; /* Ensures they are square */
-    border-radius: 50%; /* Make them circular */
-  }
-
-}
- /* Navbar Links Styling */
-
-  
+/* Navbar Links Styling */
 .nav-links {
-    display: flex; /* Ensures the list items are laid out in a row */
-    justify-content: flex-start; /* Aligns the links to the left */
-    gap: 10px; /* Optional spacing between links */
-    padding-left: 0px; /* Adjust this value to move the links closer to the left */
-    list-style: none; /* Removes default bullet points */
+  display: flex; /* Ensures the list items are laid out in a row */
+  justify-content: flex-start; /* Aligns the links to the left */
+  gap: 10px; /* Optional spacing between links */
+  padding-left: 0px; /* Adjust this value to move the links closer to the left */
+  list-style: none; /* Removes default bullet points */
 }
 .nav-links li a {
   display: inline-block; /* Makes the link act as a block for padding and border */
@@ -162,4 +78,46 @@ body {
 .nav-links li a:hover {
   background-color: #E98074; /* Light Pink background on hover */
   transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Footer Styling */
+.footer {
+  font-size: 0.9rem; /* Make the text slightly smaller */
+  text-align: center;
+  padding: 10px 0; /* Reduce padding */
+  background-color: #2A1B3D; /* Match the page background */
+  color: #FFFFFF; /* Ensure text is readable */
+  width: 100%; /* Full width across the bottom */
+  position: static; /* Fix it at the bottom of the page */
+  bottom: 0; /* Align it at the bottom */
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align image and text */
+  }
+
+  .profile-image img {
+    width: 300px; /* Make image smaller on mobile */
+    margin-left: 0; /* Remove custom left margin for mobile */
+    margin-bottom: 20px; /* Space below the image */
+  }
+
+  .short-description {
+    text-align: center; /* Center align text for mobile */
+  }
+
+  .short-description h1 {
+    text-align: center; /* Center the "About Me" header */
+  }
+
+  .short-description p {
+    padding-right: 0; /* Remove extra right padding for mobile */
+  }
+
+  .long-description {
+    padding: 0 20px; /* Reduce left and right padding for smaller devices */
+  }
 }
