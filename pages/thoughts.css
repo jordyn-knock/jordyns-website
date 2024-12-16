@@ -3,7 +3,7 @@
     text-align: center;
     margin: 40px 0;
     font-size: 3rem;
-    color: #D83F87; /* Pink */
+    color: #00154F; /* Pink */
   }
   
   /* Section Styles */
@@ -11,14 +11,14 @@
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #44318D; /* Purple */
+    background-color: #4c85b3; /* Purple */
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   }
   
   .thoughts-section h2 {
     font-size: 2rem;
-    color: #F4C2C2; /* Light Pink */
+    color: #00154F; /* Light Pink */
     margin-bottom: 20px;
   }
   
@@ -32,7 +32,7 @@
     font-size: 1.2rem;
     margin-bottom: 20px;
     color: #FFFFFF; /* White text */
-    background-color: #2A1B3D; /* Deep Purple */
+    background-color: #cbe6fe; /* Deep Purple */
     padding: 15px;
     border-radius: 5px;
     transition: transform 0.3s ease, background-color 0.3s ease;
@@ -41,13 +41,13 @@
   .courses-list li strong {
     display: block;
     font-size: 1.4rem;
-    color: #D83F87; /* Pink for course titles */
+    color: #00154F; /* Pink for course titles */
     margin-bottom: 5px;
   }
   
   .courses-list li p {
     font-size: 1rem;
-    color: #F4C2C2; /* Light Pink for descriptions */
+    color: #00154F; /* Light Pink for descriptions */
     margin: 0;
   }
   

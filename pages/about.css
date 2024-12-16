@@ -203,4 +203,8 @@ body {
   .long-description {
     padding: 0 20px; /* Reduce left and right padding for smaller devices */
   }
+
+  .container::after {
+    content: ''; /* Remove "JK" text by clearing the content */
+  }
 }

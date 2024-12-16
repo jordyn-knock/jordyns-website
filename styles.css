@@ -12,7 +12,7 @@ body {
   
 /* Navbar Styles */
 .navbar {
-  background-color: #00154F; /* Deep Purple */
+  background-color: #00154F; 
   padding: 5px 20px; /* Reduced padding to make the navy space less thick */
   display: flex;
   align-items: center;
@@ -60,12 +60,21 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 5px 10px; /* Reduce the space around navbar items */
+    height: 40px; /* Reduce the overall height of the navbar */
+  }
+
   .navbar .logo {
-    font-size: 1.4rem; /* Slightly smaller logo for smaller screens */
+    font-size: 1.2rem; /* Smaller logo for mobile */
+  }
+
+  .navbar .nav-links {
+    gap: 10px; /* Closer spacing between links */
   }
 
   .navbar .nav-links li a {
-    font-size: 1rem; /* Slightly smaller font for links */
-    padding: 6px 10px; /* Reduce padding slightly for smaller screens */
+    font-size: 0.9rem; /* Smaller font for mobile links */
+    padding: 4px 8px; /* Reduce padding for smaller links */
   }
 }

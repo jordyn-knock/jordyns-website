@@ -1,9 +1,3 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background-color: #f4f4f4;
@@ -71,17 +65,21 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  align-items: center; /* Centers the entire content including tags */
+  text-align: center; /* Centers the text inside the content */
+  padding: 10px 5px;
 }
 
 .content h2 {
   font-size: 1.6rem;
   color: #00154F; /* Fixed "colour" to "color" */
+  margin-bottom: 3px;
 }
 
 .content p {
   font-size: 1rem;
   color: #00154F; /* Optional: You can customize the paragraph color if needed */
+  margin-bottom: 5px;
 }
 
 .tags {
@@ -94,7 +92,7 @@ body {
   background-color: #00154F;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 8px 12px;
   font-size: 0.9rem;
   border-radius: 5px;
 }
