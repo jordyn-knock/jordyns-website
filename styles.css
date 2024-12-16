@@ -70,11 +70,13 @@ body {
   }
 
   .navbar .nav-links {
-    gap: 10px; /* Closer spacing between links */
+    gap: 3px; /* Closer spacing between links */
+    margin-left: 5px; /* Remove the default margin-left */
+    padding-left: 0; /* Remove default padding for ul */
   }
 
   .navbar .nav-links li a {
-    font-size: 0.9rem; /* Smaller font for mobile links */
+    font-size: 0.85rem; /* Smaller font for mobile links */
     padding: 4px 8px; /* Reduce padding for smaller links */
   }
 }
