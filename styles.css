@@ -1,9 +1,9 @@
 body {
-    font-family: Arial, sans-serif; /* Set global font to Arial */
+    font-family: 'Nunito', sans-serif; /* Set global font to Arial */
     margin: 0;
     padding: 0;
-    background-color: #2A1B3D; /* Deep Purple background for consistency */
-    color: #FFFFFF; /* Default text color */
+    background-color: #cbe6fe; /* Deep Purple background for consistency */
+    color: #00154F; /* Default text color */
   }
 
   h1 {
@@ -12,74 +12,27 @@ body {
   
 /* Navbar Styles */
 .navbar {
-    background-color: #2A1B3D; /* Deep Purple */
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #D83F87; /* Pink */
-    text-decoration: none;
-  }
-  
-  .navbar .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .navbar .nav-links li {
-    margin: 0;
-  }
-  
-  .navbar .nav-links li a {
-    color: #D83F87; /* Pink */
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar .nav-links li a:hover {
-    color: #E98074; /* Light Pink */
-  }
-
-  /* Global Styles */
-body {
-  font-family: Arial, sans-serif; /* Set global font to Arial */
-  margin: 0;
-  padding: 0;
-  background-color: #2A1B3D; /* Deep Purple background for consistency */
-  color: #FFFFFF; /* Default text color */
-}
-
-h1 {
-  margin-top: 0; /* Removes any default margin above all <h1> elements */
-}
-
-/* Navbar Styles */
-.navbar {
-  background-color: #2A1B3D; /* Deep Purple */
-  padding: 10px 20px;
+  background-color: #00154F; /* Deep Purple */
+  padding: 5px 20px; /* Reduced padding to make the navy space less thick */
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .navbar .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #D83F87; /* Pink */
+  color: #c7e4ff; /* Pink */
   text-decoration: none;
+  align-self: center; /* Aligns the logo in line with the links */
 }
 
 .navbar .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
+  margin-left: auto; /* Pushes links as far right as possible */
+  padding-top: 0; /* Ensures the links are at the top */
+  padding-bottom: 0; /* Removes any default bottom padding */
 }
 
 .navbar .nav-links li {
@@ -87,14 +40,22 @@ h1 {
 }
 
 .navbar .nav-links li a {
-  color: #D83F87; /* Pink */
+  color: #c7e4ff; /* Pink */
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
 .navbar .nav-links li a:hover {
-  color: #E98074; /* Light Pink */
+  color: #4c85b3; /* Light Pink */
+}
+
+ /* Footer Styling */
+ .footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #c7e4ff; /* Match the page background */
+  color: #00154F; /* navy text for readability */
 }
 
 /* Responsive Adjustments */

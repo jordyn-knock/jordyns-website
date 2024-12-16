@@ -1,8 +1,7 @@
 /* General Page Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #2A1B3D; /* Dark Background */
-  color: #FFFFFF; /* White font */
+  background-color: #c7e4ff; /* Dark Background */
+  color: #00154F; /* White font */
   margin: 0;
   padding: 0;
 }
@@ -33,7 +32,70 @@ body {
 .short-description h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #D83F87; /* Pink "About Me" */
+  color: #4c85b3; /* Pink "About Me" */
+}
+
+.short-description p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+
+.long-description {
+  line-height: 1.8;
+  font-size: 1.2rem;
+  margin: 20px auto; /* Add vertical space around it */
+  padding: 0 40px; /* Increase left and right padding */
+  color: #FFFFFF; /* Orangy color for the long description text */
+}
+
+.long-description p {
+  margin-bottom: 20px; /* Space between paragraphs */
+}
+
+.container {
+  background-color: #00154F; /* Deep Purple */
+  padding: 20px;
+  border-radius: 20px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between containers */
+  color: #FFFFFF; /* Text color inside the container */
+  position: relative; /* Relative position to place tape */
+}
+
+/* General Page Styles */
+body {
+  background-color: #c7e4ff; /* Dark Background */
+  color: #00154F; /* White font */
+  margin: 0;
+  padding: 0;
+}
+
+.about-me {
+  text-align: left;
+  padding: 20px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* Increased gap for better spacing */
+}
+
+.profile-image img {
+  width: 500px; /* Enlarged image */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures it scales properly */
+  margin-left: 80px;
+}
+
+.short-description {
+  max-width: 600px; /* Restrict width to balance layout */
+}
+
+.short-description h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #4c85b3; /* Pink "About Me" */
 }
 
 .short-description p {
@@ -53,44 +115,65 @@ body {
   padding: 0 40px; /* Increase left and right padding */
   color: #F4C2C2; /* Orangy color for the long description text */
 }
+
 .long-description p {
   margin-bottom: 20px; /* Space between paragraphs */
 }
 
-/* Navbar Links Styling */
-.nav-links {
-  display: flex; /* Ensures the list items are laid out in a row */
-  justify-content: flex-start; /* Aligns the links to the left */
-  gap: 10px; /* Optional spacing between links */
-  padding-left: 0px; /* Adjust this value to move the links closer to the left */
-  list-style: none; /* Removes default bullet points */
-}
-.nav-links li a {
-  display: inline-block; /* Makes the link act as a block for padding and border */
-  background-color: #44318D; /* Dark Purple background */
-  color: #D83F87; /* Pink text */
-  padding: 10px 15px; /* Adds spacing around the links */
-  border-radius: 5px; /* Optional rounded corners */
-  text-decoration: none; /* Removes underline */
-  transition: background-color 0.3s ease, transform 0.2s ease;
+.container {
+  background-color: #00154F; /* Deep Purple */
+  padding: 20px;
+  border-radius: 20px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between containers */
+  color: #FFFFFF; /* Text color inside the container */
+  position: relative; /* Relative position to place tape */
 }
 
-.nav-links li a:hover {
-  background-color: #E98074; /* Light Pink background on hover */
-  transform: scale(1.05); /* Slight zoom effect on hover */
+.container::before {
+  content: '';
+  width: 140px; /* Larger tape width */
+  height: 45px; /* Larger tape height */
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg); /* Center and slightly tilt the tape */
+  background-color: #4c85b3; /* Custom Blue Tape Color */
+  clip-path: polygon(
+    4% 0%, 96% 0%, 100% 25%, 96% 50%, 100% 75%, 96% 100%, 4% 100%, 0% 75%, 4% 50%, 0% 25%
+  ); /* Creates more jagged edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  z-index: 1;
+  overflow: hidden; /* Ensure the JK text stays inside */
 }
 
-/* Footer Styling */
-.footer {
-  font-size: 0.9rem; /* Make the text slightly smaller */
-  text-align: center;
-  padding: 10px 0; /* Reduce padding */
-  background-color: #2A1B3D; /* Match the page background */
-  color: #FFFFFF; /* Ensure text is readable */
-  width: 100%; /* Full width across the bottom */
-  position: static; /* Fix it at the bottom of the page */
-  bottom: 0; /* Align it at the bottom */
+.container::after {
+  content: 'JK JK JK JK JK JK JK JK JK JK \A JK JK JK JK JK JK JK JK JK JK \A JK JK JK JK JK JK JK JK JK JK\A JK JK JK JK JK JK JK JK JK JK'; /* Adds repeating JK text on multiple lines */
+  position: absolute;
+  top: 44.8%;
+  left: 50.8%;
+  transform: translate(-50%, -50%) rotate(-5deg); /* Center the text diagonally */
+  width: 100%;
+  height: 100%;
+  font-size: 9px; /* Tiny font size for JK text */
+  font-weight: bold; /* Make JK text bold */
+  color: rgba(0, 0, 0, 0.5); /* Darker text for visibility */
+  line-height: 1.2; /* Adjust spacing for multiple rows */
+  white-space: pre-wrap; /* Allows text to wrap to new lines */
+  text-align: center; /* Center the text */
+  z-index: 2;
 }
+
+
+.container h3 {
+  margin-bottom: 10px; /* Space below the title */
+  font-size: 1.5rem; /* Larger title font size */
+  color: #c7e4ff; /* Light Blue for the titles */
+}
+
+.container p {
+  margin: 0; /* Removes default paragraph margins */
+}
+
 
 /* Mobile Layout */
 @media (max-width: 768px) {

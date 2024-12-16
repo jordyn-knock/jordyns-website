@@ -4,113 +4,138 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Jordyn Knock</title>
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="../pages/projects.css">
+  <link rel="stylesheet" href="projects.css">
+  <link rel="stylesheet" href="../styles.css"> 
   <link rel="icon" href="../jk.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
+
   <!-- Header Section -->
   <header>
     <nav class="navbar">
-      <div class="container">
-        <a href="../index.html" class="logo">Jordyn Knock</a>
-        <ul class="nav-links">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="thoughts.html">Thoughts</a></li>
-        </ul>
-      </div>
+      <a href="../index.html" class="logo">Jordyn Knock</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="thoughts.html">Thoughts</a></li>
+      </ul>
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main class="container">
-    <h1 class="projects-title">Projects</h1>
+  <!-- Page Title -->
+  <h1 class="page-title">Projects</h1>
+  <p class="page-subtitle">Click on the block to see more info about the project!</p>
 
-    <div class="projects-grid">
-      <!-- BattleBot -->
-      <div class="project-card">
-        <h2>📂 BattleBot</h2>
-        <p>
-          Prototyped a combat robot using Arduino, servo motors, and L298 motor drivers. Used Gantt charts, Risk matrices, and excel to track progress.
-          Collaborated with a team to deliver a working prototype. 
-        </p>
-        <div class="tags">
-          <span>Electronics</span>
-          <span>Programming</span>
-          <span>Mechanical Design</span>
+  <!-- LEGO Bricks Container -->
+  <div class="lego-container">
+    
+    <!-- LEGO Row 1 -->
+    <div class="lego-row">
+      <a href="./projects/battlebot.html" class="lego-brick dark-blue">
+        <div class="studs">
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
         </div>
-        <a href="./projects/battlebot.html" class="btn">View Project</a>
-      </div>
-
-      <!-- Oxalic Acid Production Process -->
-      <div class="project-card">
-        <h2>📂 Oxalic Acid Production Process</h2>
-        <p>
-          Designed a manufacturing process for oxalic acid, including reaction selection, process flow diagrams, 
-          and energy usage analysis. Developed a separation strategy for high purity and operational efficiency.
-        </p>
-        <div class="tags">
-          <span>Process Flow Diagrams</span>
-          <span>Process Economics</span>
+        <div class="content">
+          <h2>🤖 BattleBot</h2>
+          <p>Prototyped a combat robot using Arduino, servo motors, and L298 motor drivers.</p>
+          <div class="tags">
+            <button>Electronics</button>
+            <button>Programming</button>
+            <button>Mechanical Design</button>
+          </div>
         </div>
-        <a href="./projects/oxalic-acid.html" class="btn">View Project</a>
-      </div>
-
-      <!-- MOLLI Accuracy Robot Project -->
-      <div class="project-card">
-        <h2>📂 Accuracy Robot Project</h2>
-        <p>
-          Wrote Python scripts to output automatically generated coordinates in G-code based on user inputs. 
-          Conducted mechanical redesigns to improve stability and accuracy. Developed an automated data 
-          logging system using CSV and JSON files for shared access via Google Drive.
-        </p>
-        <div class="tags">
-          <span>Python</span>
-          <span>Git</span>
-          <span>G-Code</span>
-          <span>Fusion360</span>
-        </div>
-        <a href="./projects/roberto.html" class="btn">View Project</a>
-      </div>
-
-      <!-- HALO Space Habitat Design -->
-      <div class="project-card">
-        <h2>📂 HALO Space Habitat Design</h2>
-        <p>
-          Designed a sustainable lunar habitat for astronauts, focusing on mental and physical well-being. Conducted 
-          material research and developed detailed CAD models.
-        </p>
-        <div class="tags">
-          <span>TinkerCAD</span>
-          <span>Canva</span>
-          <span>Collaboration</span>
-        </div>
-        <a href="./projects/halo.html" class="btn">View Project</a>
-      </div>
-
-      <!-- Personal Website -->
-      <div class="project-card">
-        <h2>📂 Personal Website</h2>
-        <p>
-          Designed and developed a personal portfolio website to showcase projects and achievements. Built with 
-          HTML, CSS, and JavaScript and hosted on GitHub Pages.
-        </p>
-        <div class="tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>JavaScript</span>
-          <span>GitHub Pages</span>
-        </div>
-        <a href="./projects/website.html" class="btn">View Project</a>
-      </div>
+      </a>
     </div>
-  </main>
+
+    <!-- LEGO Row 2 -->
+    <div class="lego-row">
+      <a href="./projects/oxalic-acid.html" class="lego-brick medium-blue">
+        <div class="studs">
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+        </div>
+        <div class="content">
+          <h2>🧪 Oxalic Acid Production</h2>
+          <p>Designed a manufacturing process with flow diagrams and energy analysis.</p>
+          <div class="tags">
+            <button>Process Flow</button>
+            <button>Process Economics</button>
+          </div>
+        </div>
+      </a>
+
+      <a href="./projects/roberto.html" class="lego-brick medium-blue">
+        <div class="studs">
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+        </div>
+        <div class="content">
+          <h2>🎯 Accuracy Robot</h2>
+          <p>Wrote Python scripts for G-code and improved mechanical stability.</p>
+          <div class="tags">
+            <button>Python</button>
+            <button>G-Code</button>
+            <button>Fusion360</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- LEGO Row 3 -->
+    <div class="lego-row">
+      <a href="./projects/halo.html" class="lego-brick light-blue">
+        <div class="studs">
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+        </div>
+        <div class="content">
+          <h2>🚀 HALO Habitat Design</h2>
+          <p>Designed a sustainable lunar habitat for astronauts with CAD models.</p>
+          <div class="tags">
+            <button>TinkerCAD</button>
+            <button>Canva</button>
+            <button>Collaboration</button>
+          </div>
+        </div>
+      </a>
+
+      <a href="./projects/website.html" class="lego-brick light-blue">
+        <div class="studs">
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+          <div class="stud"></div>
+        </div>
+        <div class="content">
+          <h2>💻 Personal Website</h2>
+          <p>Designed and developed a portfolio website using HTML, CSS, and JS.</p>
+          <div class="tags">
+            <button>HTML</button>
+            <button>CSS</button>
+            <button>JavaScript</button>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2024 Jordyn Knock. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
