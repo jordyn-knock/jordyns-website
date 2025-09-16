@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainabite | Jordyn Knock</title>
+  <!-- Global styles -->
+  <link rel="stylesheet" href="../../styles.css">
+  <!-- Project-specific styles -->
+  <link rel="stylesheet" href="project-card.css">
+  <link rel="icon" href="../../jk.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav class="navbar">
+        <a href="../../index.html" class="logo">Jordyn Knock</a>
+        <ul class="nav-links">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html" class="active">Projects</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Project Title -->
+    <section class="project-header">
+      <h1>Sustainabite (April 2025)  </h1>
+      <p>
+        For the youCode 2025 haackathon, my team and I created Sustainabite, 
+        a web application designed to fight food waste while making sustainable eating easier. 
+        Sustainabite allows users to input the groceries they have on hand and instantly generates 
+        recipes tailored to their ingredients, dietary preferences, and portion sizes. I was really excited to hear that this idea was on theme, since I had actually come up
+         with it months before and just never had the time to execute it. For that reason, I am really proud of the project we made.
+      </p>
+
+    </section>
+    <section class="project-video">
+  <h2>Watch the project demo here:</h2>
+  <div class="video-container">
+    <iframe 
+      src="https://drive.google.com/file/d/1fLh6N-vYacqACyJ5yYErHOtLcNuy2e5G/preview" 
+      width="960" 
+      height="569" 
+      allow="autoplay">
+    </iframe>
+  </div>
+</section>
+
+  
+  </main>
+    <!-- Project Details -->
+    <section class="project-details">
+      <h2>About the Project</h2>
+     
+      <p>
+      Sustainabite was inspired by the growing issue of food waste and the difficulty of 
+      planning meals that use what you already have at home. Many people buy groceries 
+      with the best intentions, only to throw out unused ingredients. Sustainabite solves 
+      this by serving as a smart kitchen companion: it helps users reduce waste, save money, 
+      and make eco-friendly choices without the hassle of overcomplicated apps. I had the pleasure of training the overarching AI bot, 
+      and I can safetly say I learned a lot about training AI models during those stressful 24 hours.
+    <p>
+    <p>
+      <strong>How we built it:</strong> Sustainabite is powered by a large Kaggle dataset of 
+      500,000+ unique recipes. We built a streamlined frontend with <strong>Streamlit</strong> and developed 
+      several custom machine learning models:
+    </p>
+    <ul>
+      <li><strong>Image Detection (CLIP by OpenAI):</strong> Identifies ingredients from user-uploaded photos, 
+        pulling from a list of 500+ common ingredients.</li>
+      <li><strong>Overarching AI Model :</strong> Retrieves recipes based on user inputs (ingredients, cuisine, cooking time).</li>
+      <li><strong>Cuisine Model :</strong> Predicts cuisine from ingredient lists across 15+ cuisines.</li>
+      <li><strong>Meal Model:</strong> Experimented with meal type classification, later deprecated due to overly strict filtering.</li>
+      <li><strong>Time Model:</strong> Built to identify cooking times from recipe steps, though refined to use multiple-choice time options for the prototype.</li>
+    </ul>
+    <p>
+      The frontend included features like <em>Find Recipe</em>, a <em>Pantry Cupboard</em> for managing grocery lists, 
+      and <em>Favorites</em> for saving recipes.  
+    </p>
+        <p>View the full project on Devpost here: <a href=https://devpost.com/software/sustainabite-vt67m8" target="_blank">link</a></p>
+    </section>
+
+
+      
+    <section class="skills-learned">
+        <!-- Technical Skills Section -->
+        <div class="technical-skills">
+          <h2>Technical Skills</h2>
+          
+          <ul>
+            <li>Machine Learning (CLIP, PyTorch, TensorFlow)</li>
+            <li>Data Handling (large-scale Kaggle dataset)</li>
+            <li>Frontend Development (Streamlit)</li>
+            <li>Python, Matplotlib</li>
+            <li>API Integration</li>
+          </ul>
+        </div>
+      
+        <!-- Soft Skills Section -->
+        <div class="soft-skills">
+          <h2>Soft Skills</h2>
+          
+          <ul>
+            <li>Team Collaboration under tight deadlines</li>
+            <li>Big Data Optimization</li>
+            <li>Problem-Solving & Adaptability</li>
+            <li>Project and Time Management</li>
+            <li>Creative Brainstorming & Prototyping</li>
+          </ul>
+        </div>
+      </section>
+      
+    <!-- Navigation Buttons -->
+    <section class="project-navigation">
+        <a href="hydrocortisone.html" class="btn">Back</a>
+        <a href="oxalic-acid.html" class="btn">Next Project</a>
+    </section>
+  </main>
+
+</body>
+</html>
